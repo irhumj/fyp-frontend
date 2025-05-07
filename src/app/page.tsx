@@ -57,7 +57,7 @@ export default function HomePage() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ home_id: process.env.HOME_ID }),
+          body: JSON.stringify({ home_id: "pbNadkw4EVmaqn3SxQ43" }),
         }
       );
 
