@@ -9,7 +9,7 @@ import { useLightValue } from "@/hooks/useLight";
 
 export default function HomePage() {
   const { light, isLoading: isLightLoading } = useLightValue(
-    "qrDuYVztOZYIB4WIbper"
+    "pbNadkw4EVmaqn3SxQ43"
   );
   console.log(light);
   const { token, notificationPermissionStatus } = useFcmToken();
