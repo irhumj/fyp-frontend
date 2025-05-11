@@ -6,6 +6,8 @@ import { getMessaging, onMessage } from "firebase/messaging";
 import { useEffect, useState } from "react";
 import { Lightbulb, Mic, Power, Home, Bell, LoaderCircle } from "lucide-react";
 import { useLightValue } from "@/hooks/useLight";
+import { ToastContainer, toast } from "react-toastify";  // Import React Toastify components
+import "react-toastify/dist/ReactToastify.css";
 
 export default function HomePage() {
   const { light, isLoading: isLightLoading } = useLightValue(
@@ -166,6 +168,15 @@ export default function HomePage() {
           </div>
         )}
       </div>
-    </div>
+    
+
+    {/* Toast Container */}
+    <ToastContainer 
+      position="bottom-right" 
+      autoClose={3000} 
+      hideProgressBar={false} 
+      aria-label="Notification Toasts" 
+    />
+  </div>
   );
 }
